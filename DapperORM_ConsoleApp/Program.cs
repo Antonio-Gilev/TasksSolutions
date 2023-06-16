@@ -49,8 +49,8 @@ namespace DapperORM_ConsoleApp
 
             /*var orderDetail = new OrderDetail
             {
-                Order = new Order { OrderID = 1007 },
-                Product = new Product { ProductID = 1002},
+                Order = new Order { OrderID = orderId },
+                Product = new Product { ProductID = productId},
                 UnitPrice = product.UnitPrice,
                 Quantity = 5,
             };
@@ -116,7 +116,7 @@ namespace DapperORM_ConsoleApp
                 };
 
                 DataAccess.CreateOrderDetail(orderDetail);
-                Console.WriteLine("Product placed in Order");
+                Console.WriteLine("Order detail created.");
             }
 
             Console.WriteLine("Thank you for shopping with us.");
